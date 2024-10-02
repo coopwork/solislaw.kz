@@ -5,11 +5,32 @@
   box-shadow: 0 0 1rem .33rem rgb(var(--shadow-color), .15);
   z-index: 10;
   background-color: rgb(var(--background-color));
+  padding: .25rem 0;
+  opacity: 1;
+  transition: .33s padding ease-in-out !important;
+  transition: .33s transform ease-in-out !important;
+
+  &.shrinked {
+    padding: .05rem 0;
+  }
+
+  &.hide {
+    transform: translateY(-100%) !important;
+  }
 
   & .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+
+    & .header__logo__link::before {
+      display: none;
+    }
+
+    & .header__logo {
+      height: 75px;
+    }
   }
 
 }

@@ -2,6 +2,7 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 export const heroSlider = new Swiper('.hero__slider', {
   loop: true,
+  speed: 2000,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
