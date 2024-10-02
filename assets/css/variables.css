@@ -8,4 +8,6 @@
   --secondary-foreground-color: 255, 255, 255;
 
   --shadow-color: 2, 57, 150;
+
+  --blocks-air-gap: 6rem;
 }

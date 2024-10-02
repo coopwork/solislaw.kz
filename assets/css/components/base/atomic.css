@@ -5,3 +5,8 @@
 .hidden {
   display: none;
 }
+
+.air-gap {
+  margin-top: var(--blocks-air-gap);
+  margin-bottom: var(--blocks-air-gap);
+}

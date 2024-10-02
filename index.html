@@ -27,9 +27,31 @@
   </header>
 
   <!-- HERO SLIDER -->
-  <div data-aos-duration="2000" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="bottom"
-    class="hero__slider">
-    <div class="slider"></div>
+  <div data-aos-duration="2000" data-aos-delay="300" data-aos="zoom-out" data-aos-anchor-placement="bottom"
+    class="hero__slider swiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img
+          src="https://img2.kapital.kz/ncmYTV1gba8/czM6Ly9rYXBpdGFsLXN0YXRpYy9pbWcvbGVnYWN5L2ltYWdlcy82L2QvNC9jLzEvYzBiYjg3MDMzYzcyOWU5NzU3NjU0NTczM2MzLmpwZw"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://s.qonaev-gorod.kz/section/newsInText/upload/images/news/intext/000/056/071/urist2_664e2601e083e.jpeg"
+          alt=""></div>
+      <div class="swiper-slide"><img
+          src="https://optimism.kz/wp-content/uploads/2023/05/v-astane-provoditsya-ocherednaya-akcziya-narodnyj-yurist.jpg"
+          alt=""></div>
+      ...
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
   </div>
 
   <div class="container">
@@ -37,7 +59,7 @@
 
     <i class="bi bi-airplane"></i>
 
-    <a href="" class="btn secondary">Button</a>
+    <a href="" class="btn secondary"><i class="bi bi-airplane"></i>Button</a>
     <button class="btn primary">Button</button>
     <button class="btn secondary">Button</button>
 
@@ -85,12 +107,16 @@
 
   <!-- PARTNERS -->
   <main data-aos-duration="2000" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="bottom"
-    class="partners">
+    class="partners__sliders__block air-gap">
     <div class="container">
       <h3>Наши партнеры</h3>
     </div>
-    <div class="partners__slider">
-      partners slider
+    <div class="partners__slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
     </div>
   </main>
 
@@ -129,6 +155,7 @@
       </small>
     </div>
   </footer>
+  <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="./assets/js/index.js"></script>
 </body>
 

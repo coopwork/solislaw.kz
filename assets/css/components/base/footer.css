@@ -1,5 +1,5 @@
 .main__footer {
-  background-color: rgb(var(--primary-color));
+  background-color: rgb(var(--foreground-color));
 
   .footer__wrapper {
     padding: 5rem 0;

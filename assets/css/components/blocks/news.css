@@ -1,4 +1,6 @@
 .news {
+  margin: var(--blocks-air-gap) auto;
+
   & .news__wrapper {
     & .news__card {
 
