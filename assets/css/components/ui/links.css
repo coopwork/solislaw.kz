@@ -1,0 +1,31 @@
+a[href] {
+  position: relative;
+  text-decoration: none;
+  color: rgb(var(--primary-color));
+
+
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(var(--primary-color));
+    content: '';
+    width: 0%;
+    height: 2px;
+    bottom: -.25rem;
+    right: 0;
+    transition: .3s width ease-in-out;
+    border-radius: 1rem;
+  }
+
+  &:hover {
+    color: rgb(var(--primary-color), .75);
+
+    &::before {
+      left: 0;
+      right: auto;
+      width: 100%;
+      background-color: rgb(var(--primary-color), .75);
+    }
+  }
+}

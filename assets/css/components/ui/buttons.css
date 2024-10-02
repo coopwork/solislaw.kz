@@ -1,0 +1,38 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .75rem;
+  padding: .5rem 1.25rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  transition: .3s background-color ease-in-out;
+
+  &::before,
+  &:hover::before {
+    display: none;
+  }
+
+  &.primary {
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--primary-foreground-color));
+
+    &:hover {
+      background-color: rgb(var(--primary-color), .75);
+      color: rgb(var(--primary-foreground-color));
+    }
+  }
+
+  &.secondary {
+    background-color: rgb(var(--secondary-color));
+    color: rgb(var(--secondary-foreground-color));
+
+    &:hover {
+      background-color: rgb(var(--secondary-color), .75);
+      color: rgb(var(--secondary-foreground-color));
+    }
+  }
+}

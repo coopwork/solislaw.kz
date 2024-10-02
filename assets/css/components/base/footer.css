@@ -1,0 +1,18 @@
+.main__footer {
+  background-color: rgb(var(--primary-color));
+
+  .footer__wrapper {
+    padding: 5rem 0;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .footer__copyright {
+    color: rgb(var(--primary-foreground-color));
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+}

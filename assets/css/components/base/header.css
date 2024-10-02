@@ -1,0 +1,15 @@
+.main__header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 1rem .33rem rgb(var(--shadow-color), .15);
+  z-index: 10;
+  background-color: rgb(var(--background-color));
+
+  & .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

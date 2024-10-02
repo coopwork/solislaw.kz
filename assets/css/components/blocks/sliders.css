@@ -1,0 +1,5 @@
+.hero__slider {
+  width: 100%;
+  background-color: rgb(var(--primary-color), .25);
+  height: 90dvh;
+}

@@ -1,0 +1,7 @@
+@import url(../libs/bootstrap/bootstrap-reboot.css);
+@import url(../libs/bootstrap/bootstrap-grid.min.css);
+@import url(../libs/bootstrap-icons/bootstrap-icons.min.css);
+@import url(./variables.css);
+
+
+@import url(./components/components.css);
