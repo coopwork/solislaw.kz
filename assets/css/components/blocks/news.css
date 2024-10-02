@@ -1,0 +1,47 @@
+.news {
+  & .news__wrapper {
+    & .news__card {
+
+      & .news__card__wrapper {
+        margin: .25rem;
+        overflow: hidden;
+        aspect-ratio: 16/10;
+        border-radius: 1.5rem 0;
+        transition: .33s border-radius ease-in-out;
+
+        &:hover {
+          border-radius: 2rem 0;
+        }
+
+        & .news__card__title {
+          position: absolute;
+          z-index: 1;
+          bottom: 1rem;
+          max-width: 90%;
+          padding: .25rem .75rem;
+          border-radius: 0 .5rem .5rem 0;
+          background-color: rgb(var(--primary-color));
+          color: rgb(var(--primary-foreground-color));
+        }
+
+        & .news__card__image {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          transition: .5s scale ease-in-out, .75s filter ease-in-out;
+          opacity: .75;
+          filter: saturate(50%) blur(.11rem);
+        }
+
+        &:hover .news__card__image {
+          scale: 1.1;
+          filter: saturate(75%) blur(0);
+        }
+      }
+
+    }
+  }
+}

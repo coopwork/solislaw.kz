@@ -6,3 +6,6 @@
 @import url(./base/footer.css);
 
 @import url(./blocks/sliders.css);
+@import url(./blocks/news.css);
+
+@import url(./base/atomic.css);

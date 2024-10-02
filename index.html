@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="./assets/libs/aos/aos.js"></script>
   <title>Layout site</title>
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="main__header">
+  <header data-aos-duration="2000" data-aos-delay="300" data-aos="fade-down" data-aos-anchor-placement="bottom"
+    class="main__header">
     <div class="container header__wrapper">
       <a href="/">
         <h2>LOGO</h2>
@@ -24,7 +27,8 @@
   </header>
 
   <!-- HERO SLIDER -->
-  <div class="hero__slider">
+  <div data-aos-duration="2000" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="bottom"
+    class="hero__slider">
     <div class="slider"></div>
   </div>
 
@@ -39,6 +43,56 @@
 
     <a href="#">Текст ссылки как ориентир</a>
   </div>
+
+  <!-- NEWS -->
+  <main data-aos-duration="2000" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="bottom"
+    class="news container">
+    <h3>
+      <a href="#">Новости <i class="bi bi-arrow-right"></i></a>
+    </h3>
+    <section class="news__wrapper row">
+      <article class="news__card  col-12 col-md-4">
+        <div class="news__card__wrapper relative">
+          <h4 class="news__card__title">Заголовок новости</h4>
+          <a class="fullsize__link" href="#"></a>
+          <img class="news__card__image"
+            src="https://www.zakon.kz/pbi/WEBP/2024-05-10/file-77956e1b-cd52-40dc-b56b-f02cc0fe12ff/800x450.webp"
+            alt="Заголовок новости">
+        </div>
+      </article>
+      <article class="news__card  col-12 col-md-4">
+        <div class="news__card__wrapper relative">
+
+          <h4 class="news__card__title">Заголовок новости для теста по длиннее что бы проверить как поведет себя тайтл
+          </h4>
+          <a class="fullsize__link" href="#"></a>
+          <img class="news__card__image"
+            src="https://img2.kapital.kz/ncmYTV1gba8/czM6Ly9rYXBpdGFsLXN0YXRpYy9pbWcvbGVnYWN5L2ltYWdlcy82L2QvNC9jLzEvYzBiYjg3MDMzYzcyOWU5NzU3NjU0NTczM2MzLmpwZw"
+            alt="Заголовок новости">
+        </div>
+      </article>
+      <article class="news__card  col-12 col-md-4">
+        <div class="news__card__wrapper relative">
+
+          <h4 class="news__card__title">Заголовок новости</h4>
+          <a class="fullsize__link" href="#"></a>
+          <img class="news__card__image" src="https://dostupnoepravo.ru/img/article/normal/582.png?1692695971"
+            alt="Заголовок новости">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- PARTNERS -->
+  <main data-aos-duration="2000" data-aos-delay="300" data-aos="fade-up" data-aos-anchor-placement="bottom"
+    class="partners">
+    <div class="container">
+      <h3>Наши партнеры</h3>
+    </div>
+    <div class="partners__slider">
+      partners slider
+    </div>
+  </main>
 
   <!-- FOOTER -->
   <footer class="main__footer">
@@ -75,6 +129,7 @@
       </small>
     </div>
   </footer>
+  <script type="module" src="./assets/js/index.js"></script>
 </body>
 
 </html>
