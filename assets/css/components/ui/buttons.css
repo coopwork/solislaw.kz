@@ -17,6 +17,10 @@
     display: none;
   }
 
+  &:active {
+    scale: .95;
+  }
+
   &.primary {
     background-color: rgb(var(--primary-color));
     color: rgb(var(--primary-foreground-color));

@@ -1,0 +1,16 @@
+:root {
+  --background-color: 0, 0, 0;
+  --foreground-color: 255, 255, 255;
+
+  --primary-color: 35, 55, 114;
+  --primary-foreground-color: 255, 255, 255;
+  --secondary-color: 186, 35, 220;
+  --secondary-foreground-color: 255, 255, 255;
+  --accent-color: 240, 240, 55;
+  --accent-foreground-color: 255, 255, 255;
+
+  --shadow-color: 2, 57, 150;
+
+  --invertor-b-w: invert(0);
+  --invertor-w-b: invert(1);
+}

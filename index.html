@@ -1,27 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#363b3d">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43">
+  <script>
+    if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+      document.documentElement.style.display = 'none';
+      document.head.insertAdjacentHTML(
+        'beforeend',
+        '<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">'
+      );
+    }
+  </script>
   <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/themes/light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="./assets/css/themes/dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./assets/css/index.css">
   <script src="./assets/libs/aos/aos.js"></script>
-  <title>Layout site</title>
+
+  <title>Solis Law</title>
 </head>
 
 <body>
+  <!-- UP BAR -->
+  <div class="main__up__bar">
+    <div class="container up__bar__wrapper">
+      <select class="up__bar__language__selector" name="language">
+        <option value="kz">Қазақша</option>
+        <option selected value="ru">Русский</option>
+        <option value="en">English</option>
+      </select>
+      <div class="up__bar__absolute__decorator"></div>
+      <div class="up__bar__static__decorator"></div>
+      <div class="up__bar__site__settings">
+        <button id="blind_run" class="btn blindjs" title="Включить версию для слабовидящих">
+          <i class="bi bi-eyeglasses"></i>
+        </button>
+
+        <fieldset class="switcher">
+          <legend class="switcher__legend">Схема</legend>
+          <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light"
+            aria-label="Светлая">
+          <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto"
+            aria-label="Системная" checked>
+          <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark"
+            aria-label="Тёмная">
+          <div class="switcher__status"></div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
   <!-- HEADER -->
-  <header data-aos-duration="2000" data-aos-delay="300" data-aos="fade-down" data-aos-anchor-placement="bottom"
-    class="main__header">
+  <header class="main__header">
     <div class="container header__wrapper">
       <a class="header__logo__link" href="/">
         <img class="header__logo" src="./assets/img/logo.webp" alt="solis law logo">
       </a>
-      <nav>
-        <a href="#">Навигация</a>
-        <a href="#">Навигация</a>
-        <a href="#">Навигация</a>
+      <nav class="header__navigation">
+        <a class="header__nav__link" href="#">Главная</a>
+        <a class="header__nav__link" href="#">Команда</a>
+        <a class="header__nav__link" href="#">О нас</a>
       </nav>
     </div>
   </header>
@@ -41,18 +83,18 @@
       <div class="swiper-slide"><img
           src="https://optimism.kz/wp-content/uploads/2023/05/v-astane-provoditsya-ocherednaya-akcziya-narodnyj-yurist.jpg"
           alt=""></div>
-      ...
     </div>
 
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="hero__slider__button__prev"><i class="bi bi-arrow-left-circle"></i></div>
+    <div class="hero__slider__button__next"><i class="bi bi-arrow-right-circle"></i></div>
     <div class="autoplay-progress">
       <svg viewBox="0 0 48 48">
         <circle cx="24" cy="24" r="20"></circle>
       </svg>
-      <span></span>
+      <span>SOLIS</span>
     </div>
   </div>
+
 
   <div class="container">
     work
@@ -113,9 +155,9 @@
     </div>
     <div class="partners__slider swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">logo 1</div>
+        <div class="swiper-slide">logo 2</div>
+        <div class="swiper-slide">logo 3</div>
       </div>
     </div>
   </main>
@@ -157,6 +199,9 @@
   </footer>
   <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
   <script type="module" src="./assets/js/index.js"></script>
+  <script src="./assets/js/theme/color-scheme.js"></script>
+  <script src="./assets/libs/blindjs/blind.js"></script>
+  <script src="./assets/libs/blindjs/dashboard-creator.js"></script>
 </body>
 
 </html>

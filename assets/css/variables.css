@@ -1,13 +1,33 @@
 :root {
-  --background-color: 255, 255, 255;
+  color-scheme: light dark;
+  /* --background-color: 255, 255, 255;
   --foreground-color: 0, 0, 0;
 
   --primary-color: 35, 55, 114;
   --primary-foreground-color: 255, 255, 255;
   --secondary-color: 186, 35, 220;
   --secondary-foreground-color: 255, 255, 255;
+  --accent-color: 240, 240, 55;
+  --accent-foreground-color: 255, 255, 255;
 
-  --shadow-color: 2, 57, 150;
+  --shadow-color: 2, 57, 150; */
 
   --blocks-air-gap: 6rem;
+
+
+
+
+  /* @media (prefers-color-scheme: dark) {
+    --background-color: 0, 0, 0;
+    --foreground-color: 255, 255, 255;
+
+    --primary-color: 35, 55, 114;
+    --primary-foreground-color: 255, 255, 255;
+    --secondary-color: 186, 35, 220;
+    --secondary-foreground-color: 255, 255, 255;
+    --accent-color: 240, 240, 55;
+    --accent-foreground-color: 255, 255, 255;
+
+    --shadow-color: 2, 57, 150; */
+  /* } */
 }

@@ -1,0 +1,87 @@
+.switcher {
+  position: relative;
+  margin: 0;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: none;
+}
+
+.switcher__legend {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switcher__radio {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus {
+  outline: none;
+}
+
+.switcher__radio--light {
+  background-image: url('../../../img/icons/light.svg');
+}
+
+.switcher__radio--auto {
+  background-image: url('../../../img/icons/auto.svg');
+}
+
+.switcher__radio--dark {
+  background-image: url('../../../img/icons/dark.svg');
+}
+
+.switcher__radio--dark,
+.switcher__radio--auto,
+.switcher__radio--light {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.switcher__status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: .5rem;
+  background-color: rgb(var(--background-color), .05);
+  background-repeat: no-repeat;
+  background-image: url('../../../img/icons/status.svg');
+  background-size: 2rem;
+  background-position: center;
+  transition: background-position 0.1s ease-in;
+  filter: var(--invertor-b-w);
+  opacity: .15;
+}
+
+/* .switcher__radio:checked {
+  filter: var(--invertor-w-b);
+} */
+
+.switcher__radio:focus-visible~.switcher__status {
+  box-shadow: 0 0 0 2px rgb(var(--shadow-color), .05);
+}
+
+.switcher__radio--light:checked~.switcher__status {
+  background-position: left 2px center;
+}
+
+.switcher__radio--auto:checked~.switcher__status {
+  background-position: center center;
+}
+
+.switcher__radio--dark:checked~.switcher__status {
+  background-position: right 2px center;
+}

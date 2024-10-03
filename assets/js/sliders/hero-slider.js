@@ -7,16 +7,17 @@ export const heroSlider = new Swiper('.hero__slider', {
     delay: 2500,
     disableOnInteraction: false
   },
+  slidesPerView: 1,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hero__slider__button__next',
+    prevEl: '.hero__slider__button__prev',
   },
 
   on: {
     autoplayTimeLeft(s, time, progress) {
       progressCircle.style.setProperty("--progress", 1 - progress);
-      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      // progressContent.textContent = `${Math.ceil(time / 1000)}`;
     }
   }
 

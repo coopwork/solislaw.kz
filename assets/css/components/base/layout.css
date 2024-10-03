@@ -1,4 +1,13 @@
+html,
 body {
+  color: rgb(var(--foreground-color));
+  background-color: rgb(var(--background-color));
+}
+
+
+body {
+  width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
 }
 
@@ -8,7 +17,8 @@ body {
   padding: 0 .75rem;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   user-select: none;
   -moz-user-select: none;
